@@ -55,41 +55,57 @@
 .navbar-vertical .navbar-brand-img,
 .navbar-vertical .navbar-brand > img {
   max-width: 100% !important;
-  max-height: 4rem !important;
+  max-height: 6rem !important;
 }
 
 /* select */
 
-.css-yk16xz-control{
+.css-yk16xz-control,
+.css-1pahdxg-control{
   border-radius: 5rem !important;
   border: none !important;
   background: rgb(241, 241, 241) !important;
   color : rgb(92, 91, 91) !important;
-  width: 14rem !important;
+  width: 10rem !important;
+  box-shadow: none !important;
+  font-size: 12px !important;
 }
 
-
-.css-yk16xz-control:active{
-  border:none !important;
+.css-1wa3eu0-placeholder{
+  padding: 8px;
+  font-size: 14px;
 }
 
 .css-26l3qy-menu{
   box-shadow: none !important;
+  font-size: 12px !important;
+  
 }
 .css-4ljt47-MenuList{
+  width: 10rem !important;
   max-height: 35rem !important;
 }
 .css-tlfecz-indicatorContainer,
 .css-1hb7zxy-IndicatorsContainer{
   display: none !important;
 }
-@media (min-width: 1000px) {
-  .img-preview {
-    width: 30% !important;
-  }  
 
+.map-style{
+  margin: -5rem 0 0 11rem !important;
+}
+.leaflet-container{
+  border-radius: 1rem !important;
 }
 
+.detail-box{
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.detail-box h6{
+  color: gray
+}
 
 /* buat 1 page isinya menampilkan jumlah kasus covid terakhir dan juga menampilkan kasus pernegara, mockup sesuai kreativitas */
 

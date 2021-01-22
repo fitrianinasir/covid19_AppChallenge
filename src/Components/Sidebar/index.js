@@ -1,52 +1,55 @@
 import React from "react";
-import logo from "../../assets/logo telkomsel.png";
+import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
 function index(props) {
+  
   const cursor = {
     cursor: "pointer",
   };
 
   return (
     <div>
+      
       <nav
-        class="sidenav navbar navbar-vertical fixed-left  navbar-expand-xs navbar-light bg-white"
+        className="sidenav navbar navbar-vertical fixed-left  navbar-expand-xs navbar-light bg-white"
         id="sidenav-main"
       >
-        <div class="scrollbar-inner pt-2">
-          <div class="sidenav-header align-items-center">
-            <Link class="navbar-brand" to="/">
-              <img src={logo} class="navbar-brand-img nav-img" alt="logo" />
+        <div className="scrollbar-inner pt-2">
+          <div className="sidenav-header align-items-center mb-5">
+            <Link className="navbar-brand" to="/">
+              <img src={logo} className="navbar-brand-img nav-img" alt="logo" />
+              <p className="font-weight-bold">UNIVERSITAS <br/> HASANUDDIN </p>
             </Link>
           </div>
-          <div class="navbar-inner ">
-            <div class="collapse navbar-collapse" id="sidenav-collapse-main">
-              <ul class="navbar-nav mt-5">
-                <li class="nav-item" style={cursor}>
-                  <Link class="nav-link" to="/dashboard">
-                    <i class="ni ni-tv-2 text-primary"></i>
-                    <span class="nav-link-text text-dark">Dashboard</span>
+          <div className="navbar-inner ">
+            <div className="collapse navbar-collapse" id="sidenav-collapse-main">
+              <ul className="navbar-nav mt-5">
+                <li className="nav-item" style={cursor}>
+                  <Link className="nav-link" to="/dashboard">
+                    <i className="ni ni-tv-2 text-primary"></i>
+                    <span className="nav-link-text text-dark">Dashboard</span>
                   </Link>
                 </li>
 
-                <li class="nav-item">
-                  <Link class="nav-link" to="/clients">
-                    <i class="ni ni-world-2 text-primary"></i>
-                    <span class="nav-link-text text-dark">Symptoms</span>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/symptoms">
+                    <i className="ni ni-world-2 text-primary"></i>
+                    <span className="nav-link-text text-dark">Symptoms</span>
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link" to="/partnership">
-                    <i class="ni ni-single-02 text-yellow"></i>
-                    <span class="nav-link-text text-dark">Test Yourself</span>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/test">
+                    <i className="ni ni-single-02 text-yellow"></i>
+                    <span className="nav-link-text text-dark">Test Yourself</span>
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link" to="/blogs">
-                    <i class="ni ni-bullet-list-67 text-default"></i>
-                    <span class="nav-link-text text-dark">Journal</span>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/journal">
+                    <i className="ni ni-bullet-list-67 text-default"></i>
+                    <span className="nav-link-text text-dark">Journal</span>
                   </Link>
                 </li>
               </ul>
@@ -56,10 +59,9 @@ function index(props) {
       </nav>
 
       {/* TOP NAV */}
-      <div class="main-content" id="panel">
+      <div className="main-content" id="panel">
         <Navbar />
         {props.header}
-        {props.content}
         <Footer />
       </div>
     </div>

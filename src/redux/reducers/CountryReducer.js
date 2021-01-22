@@ -1,5 +1,4 @@
 import {
-  GET_COUNTRY_CODE,
   GET_COUNTRY_REQUEST,
   GET_COUNTRY_SUCCESS,
   GET_COUNTRY_FAILURE,
@@ -7,18 +6,12 @@ import {
 
 const initialState = {
   loading: false,
-  code: "",
   country: [],
   errorTotal: "",
 };
 
 const CountryReducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_COUNTRY_CODE:
-      return {
-        ...state,
-        code: action.code,
-      };
     case GET_COUNTRY_REQUEST:
       return {
         ...state,

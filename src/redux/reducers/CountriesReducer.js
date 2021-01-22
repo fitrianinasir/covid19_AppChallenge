@@ -17,14 +17,14 @@ const CountriesReducer = (state = initialState, action) => {
     case GET_COUNTRIES_SUCCESS:
       return{
         ...state,
-        loading: false,
+        loading: true,
         allCountries: action.payload
       }
 
     case GET_COUNTRIES_FAILURE:
         return{
           ...state,
-          loading: false,
+          loading: true,
           allCountries: [],
           errorTotal: action.payload
         }

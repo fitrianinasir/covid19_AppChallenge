@@ -56,13 +56,6 @@ export const getCountriesFailure = (error) => {
 
 // COUNTRY
 
-export const getCountryCode = (code) => {
-  return {
-    type: GET_COUNTRY_CODE,
-    code: code
-  };
-};
-
 export const getCountryRequest = () => {
   return {
     type: GET_COUNTRY_REQUEST,
