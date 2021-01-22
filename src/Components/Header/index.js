@@ -2,7 +2,7 @@ import React from "react";
 
 function index(props) {
   return (
-    <div class="header bg-primary pb-6" style={{ marginBottom: "30%" }}>
+    <div class="header bg-primary pb-6">
       <div class="container-fluid">
         <div class="header-body">
           <div class="row align-items-center py-4">
@@ -35,11 +35,9 @@ function index(props) {
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-4">
-                        Total visitors
+                        Confirmed
                       </h5>
-                      <span class="h2 font-weight-bold mb-0">
-                        4
-                      </span>
+                      <span class="h2 font-weight-bold mb-0">{props.data && props.data.confirmed}</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
@@ -56,11 +54,9 @@ function index(props) {
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-4">
-                        Total Blogs
+                        Recovered
                       </h5>
-                      <span class="h2 font-weight-bold mb-0">
-                        3
-                      </span>
+                      <span class="h2 font-weight-bold mb-0">{props.data && props.data.recovered}</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
@@ -77,11 +73,9 @@ function index(props) {
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-4">
-                        AVG Blog Visitors
+                        Critical
                       </h5>
-                      <span class="h2 font-weight-bold mb-0">
-                        2
-                      </span>
+                      <span class="h2 font-weight-bold mb-0">{props.data && props.data.critical}</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
@@ -98,11 +92,9 @@ function index(props) {
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-4">
-                        Total Clients
+                        Deaths
                       </h5>
-                      <span class="h2 font-weight-bold mb-0">
-                          1
-                      </span>
+                      <span class="h2 font-weight-bold mb-0">{props.data && props.data.deaths}</span>
                     </div>
 
                     <div class="col-auto">
@@ -116,6 +108,7 @@ function index(props) {
             </div>
           </div>
         </div>
+       {props.content}
       </div>
     </div>
   );

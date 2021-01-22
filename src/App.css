@@ -44,9 +44,9 @@
   margin-right: 0px;
 }
 
-.navbar-top, .header{
-  /* background-color: #ce032d!important; */
-}
+/* .navbar-top, .header{
+  background-color: #ce032d!important;
+} */
 
 .administrator {
   float: right !important;
@@ -57,9 +57,42 @@
   max-width: 100% !important;
   max-height: 4rem !important;
 }
+
+/* select */
+
+.css-yk16xz-control{
+  border-radius: 5rem !important;
+  border: none !important;
+  background: rgb(241, 241, 241) !important;
+  color : rgb(92, 91, 91) !important;
+  width: 14rem !important;
+}
+
+
+.css-yk16xz-control:active{
+  border:none !important;
+}
+
+.css-26l3qy-menu{
+  box-shadow: none !important;
+}
+.css-4ljt47-MenuList{
+  max-height: 35rem !important;
+}
+.css-tlfecz-indicatorContainer,
+.css-1hb7zxy-IndicatorsContainer{
+  display: none !important;
+}
 @media (min-width: 1000px) {
   .img-preview {
     width: 30% !important;
-  }
+  }  
 
 }
+
+
+/* buat 1 page isinya menampilkan jumlah kasus covid terakhir dan juga menampilkan kasus pernegara, mockup sesuai kreativitas */
+
+/* pake getLatestTotal, getLatestAllCountriesByCode, getListOfCountries */
+
+/* kontrak, mediatron */
